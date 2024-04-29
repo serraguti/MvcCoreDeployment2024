@@ -15,12 +15,12 @@ namespace MvcCoreDeployment.Controllers
 
         public IActionResult Index()
         {
-            ViewData["SALUDO"] = "Nuestra App Deployment de lunes";
+            ViewData["SALUDO"] = "Nuestra App Deployment de PUENTE";
             Random random = new Random();
             List<int> numeros = new List<int>();
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                int num = random.Next(1, 50);
+                int num = random.Next(1, 500);
                 numeros.Add(num);
             }
             return View(numeros);
